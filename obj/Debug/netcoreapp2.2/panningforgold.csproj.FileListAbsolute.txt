@@ -1,0 +1,11 @@
+C:\Users\gomez\Desktop\panningforgold\obj\Debug\netcoreapp2.2\panningforgold.csprojAssemblyReference.cache
+C:\Users\gomez\Desktop\panningforgold\obj\Debug\netcoreapp2.2\panningforgold.csproj.CoreCompileInputs.cache
+C:\Users\gomez\Desktop\panningforgold\obj\Debug\netcoreapp2.2\panningforgold.AssemblyInfoInputs.cache
+C:\Users\gomez\Desktop\panningforgold\obj\Debug\netcoreapp2.2\panningforgold.AssemblyInfo.cs
+C:\Users\gomez\Desktop\panningforgold\bin\Debug\netcoreapp2.2\panningforgold.deps.json
+C:\Users\gomez\Desktop\panningforgold\bin\Debug\netcoreapp2.2\panningforgold.runtimeconfig.json
+C:\Users\gomez\Desktop\panningforgold\bin\Debug\netcoreapp2.2\panningforgold.runtimeconfig.dev.json
+C:\Users\gomez\Desktop\panningforgold\bin\Debug\netcoreapp2.2\panningforgold.dll
+C:\Users\gomez\Desktop\panningforgold\bin\Debug\netcoreapp2.2\panningforgold.pdb
+C:\Users\gomez\Desktop\panningforgold\obj\Debug\netcoreapp2.2\panningforgold.dll
+C:\Users\gomez\Desktop\panningforgold\obj\Debug\netcoreapp2.2\panningforgold.pdb
