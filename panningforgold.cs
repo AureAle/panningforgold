@@ -10,7 +10,13 @@ class panningforgold{
     static void Main(string[] args){
          	
 
-                string line = File.ReadAllText("C://Users//gomez//Desktop//panningforgold//05.html");
+            string[] files = Directory.GetFiles(@"C:\Users\gomez\Desktop\panningforgold", "*.html");
+
+            foreach (string file in files)
+            {
+                
+               string line=  File.ReadAllText(file);
+                 Console.WriteLine(file);
                     comentariosHTML(line);
                     comentariosApp(line);
                     direccionIP(line);
@@ -18,24 +24,39 @@ class panningforgold{
                     consultasSQL(line);
                     conexBD(line);
                     camposOcultos(line);
+            }
                
     }
 
     public static void comentariosHTML(string line){
-        string comment = "<!-- (.*) -->";
+        string comment = "<!--(.*?)-->";//mejorar
             
         MatchCollection matches = Regex.Matches(line, comment);
         
-            Console.WriteLine("Comentarios: " + matches.Count);
+            Console.WriteLine("Comentarios HTML: " + matches.Count);
         
     }
 
     public static void comentariosApp(string line){
-        string comments = " (/\\*([^*]|[\r\n]|(\\*+([^*/]|[\r\n])))*\\*+/)|(//.*)";
+        
+        
+        //string comments = "/\\*([^*]|[\r\n]|(\\*+([^*/]|[\r\n])))*\\*+/";
+        // string multiline = "/\\*([^*]|[\r\n]|(\\*+([^*/]|[\r\n])))*\\*/";
+        // string  multi = "/\\*([^*]|[\r\n]|(\\*([^/]|[\r\n])))*\\*/";
        
-        MatchCollection matches = Regex.Matches(line, comments);  
-             
+       string all = "(/\\*([^*]|[\r\n]|(\\*+([^*/]|[\r\n])))*\\*+/)|(//.*)";
+        
+       
+        //MatchCollection c = Regex.Matches(line, comments); 
+       // MatchCollection a = Regex.Matches(line, multiline); 
+        //MatchCollection b = Regex.Matches(line, multi); 
+        MatchCollection matches = Regex.Matches(line, all); 
+   
+
+
         Console.WriteLine("Comentarios de la app: " + matches.Count); 
+       
+
 
     }
 
@@ -81,6 +102,10 @@ class panningforgold{
         MatchCollection matches = Regex.Matches(line, hidden);  
              
         Console.WriteLine("Campos ocultos de entrada: " + matches.Count); 
+    }
+
+    public static void Resumen(string line){
+        
     }
 
 
